@@ -17,7 +17,7 @@ function Counter() {
   }
   return (
     <div style={{height:'70vh'}} className='w-100 d-flex justify-content-center align-items-center'>
-      <div className='w-50 d-flex justify-content-center align-items-center flex-column border rounded p-5'>
+      <div className='w-25 d-flex justify-content-center align-items-center flex-column border rounded p-5'>
         <h1 style={{fontSize:'100px'}}>{count}</h1>
       <div className='w-100 d-flex justify-content-between align-items-center mt-5'>
         <button className='btn btn-warning' onClick={()=>dispatch(decrement())}>Decrement</button>
@@ -25,7 +25,7 @@ function Counter() {
         <button className='btn btn-success' onClick={()=>dispatch(increment())}>Increment</button>
       </div>
       <div className="d-flex mt-5">
-        <input onChange={e=>setAmount(e.target.value)} type="text" className='form-control' placeholder='Enter amount to be uncrimented!!' />
+        <input onChange={e=>setAmount(e.target.value)} type="text" className='form-control' placeholder='Enter amount to be incrimented!!' />
         <button onClick={handleInciment} className='btn btn-primary ms-3'>Incriment by Amount</button>
       </div>
       </div>
